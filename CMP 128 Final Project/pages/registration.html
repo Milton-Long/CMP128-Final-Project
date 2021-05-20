@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Page</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <!--Lehman img goes here-->
+                <div id="page-img">
+                    <img src="../images/LehmanLogo_BlueGreen.png" id="header-img" alt="Lehman Logo">
+                </div>
+                <div id="nav-items">
+                    <a href="../pages/index.html">Home</a>
+                    <a href="../pages/registration.html">Register</a>
+                    <a href="../pages/contactus.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <h1>Conference Registration</h1>
+
+        <!--Registration form-->
+        <div id="form-container">
+            <form name="regForm" action="" id="registration-form">
+                <div class="form-field">
+                    <label>Full Name:</label> <br>
+                    <input type="text" name="fullname" id="fullname" placeholder="John Doe"> <br>
+                </div>
+
+                <div class="form-field">
+                    <label>Email:</label> <br>
+                    <input type="email" name="email" id="email" placeholder="JohnDoe@email.com"> <br>
+                </div>
+
+                <div class="form-field">
+                    <label>Password:</label> <br>
+                    <input type="text" name="password" id="passwordInput" placeholder="Enter Password"> <br>
+                </div>
+
+                <div class="form-field">
+                    <label>Confirm Password:</label> <br>
+                    <input type="text" name="confirm-Password" id="confirmpPassword" placeholder="Re-enter password"> <br>
+                </div>
+
+                <div class="form-field">
+                    <label>Phone Number:</label> <br>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="123-456-7890"> <br>
+                </div>
+
+                <div class="form-field">
+                    <label>Organization/University:</label> <br>
+                    <input type="text" name="organization" id="organization" placeholder="Doe University"> <br>
+                </div>
+                
+                <div class="form-field">
+                    <label>Country:</label> <br>
+                    <input type="text" name="country" id="country" placeholder="United States or US"> <br>
+                </div>
+                
+                <div id="radio group" class="form-field">
+                    <label>Registration Type: (Select type)</label> <br>
+                    <input type="radio" name="registration-type" value="Author" onclick="handleRadio(this);">
+                    <label>Author ($400)</label> <br>
+                    <input type="radio" name="registration-type" value="Participant" onclick="handleRadio(this);">
+                    <label>Participant ($300)</label> <br>
+                    <input type="radio" name="registration-type" value="Student" onclick="handleRadio(this);">
+                    <label>Student ($100)</label> <br>
+                </div>
+                
+                <div id="discount-field" class="form-field">
+                    <label>Discount code:</label> <br>
+                    <input type="text" name="discountCode" id="discountCode" placeholder="Enter Discount Code.  50% discount applied after registration"> <br>
+                </div>
+
+                <div id="totalPrice">
+                    <!-- <label id="priceLabel">Total: </label> -->
+                    <p id="price"></p>
+                </div>
+                
+                <div id="error-container">
+                    <ul id="error-list">
+                        <li id="name-error" class="error">Missing full name.</li>
+                        <li id="email-error" class="error">Invalid or missing email address.</li>
+                        <li id="password-char-error" class="error">Password must be between 10 and 20 characters.</li>
+                        <li id="password-lowercase-error" class="error">Password must contain at least one lowercase character.</li>
+                        <li id="password-uppercase-error" class="error">Password must contain at least one uppercase character.</li>
+                        <li id="password-digit-error" class="error">Password must contain at least one digit.</li>
+                        <li id="password-confirmation-error" class="error">Password and Confirmation must match.</li>
+                        <li id="organization-error" class="error">Missing attendee organization.</li>
+                        <li id="country-error" class="error">Missing attendee country.</li>
+                        <li id="phone-error" class="error">Wrong phone number provided.</li>
+                        
+                    </ul>
+
+                </div>
+
+                <div id="submit-container">
+                    <input type="button" value="Register" id="register"> <!--button-->
+                </div>
+            </form>
+        </div>
+
+        <!--This is the footer of the document-->
+        <footer>
+            <!-- <h2>This is the registration footer</h2> -->
+            <p>
+                15 - 16 July 2021 <br>
+                Lehman College 1st International Conference in Cloud Computing <br>
+                Bronx, NY
+            </p>
+        </footer>
+    </body>
+    <script src="../js/scripts.js"></script>
+</html>

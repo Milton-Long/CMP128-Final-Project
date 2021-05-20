@@ -1,0 +1,125 @@
+/*Header style for each page*/
+header{
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+   
+}
+
+#page-img{
+    display: inline-block;
+}
+
+#header-img{
+    float: left;
+    /* display: inline-block; */
+    width: 200px;
+}
+
+/* Finish working on nav bar in header*/
+.navbar{
+    background-color: whitesmoke;
+    overflow: hidden;
+    float: right;
+    clear: right; 
+    width: 100%;
+}
+
+#nav-items{
+    float: right;
+    clear: right;
+}
+
+#nav-items a{
+    font-size: 30px;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul.info{
+    list-style-type: square;
+}
+
+ol.con-organizers{
+    list-style-type: lower-roman;
+}
+
+footer{
+    background-color: whitesmoke;
+}
+
+
+/*Home page styles*/
+#speaker-img{
+    width: 200px;
+    height: 120px;
+}
+
+
+/*Registration page styles*/
+#form-container{
+    background-color: lightgrey;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-size: 17px;
+    
+}
+
+.form-field{
+    padding: 15px;
+}
+
+input[type=text], input[type=tel], input[type=email]{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    /* background-color: black; */
+}
+
+/* #priceLabel{
+    display: inline-block;
+} */
+
+/* #error-container{
+    display: none;
+} */
+#price{
+    padding: 15px;
+}
+
+
+.error{
+    display: none;
+    color: red;
+}
+
+
+#submit-container{
+    display: flex;
+    justify-content: center;
+}
+
+#submit-container input{
+    width: 80%;
+    height: 50px;
+    background-color: lightskyblue;
+    color: black;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+
+/*Contact page styles*/
+.contacts{
+    margin: 20px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    
+}
+
+.contacts a{
+    text-decoration: none;
+}
